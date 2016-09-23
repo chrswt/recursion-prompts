@@ -28,6 +28,8 @@ var arraySum = function(array) {
 
 // 4. Check if a number is even.
 var isEven = function(n) {
+  return n >= 0 && n <= 1 ? n === 0 :
+  n < 0 ? isEven(n + 2) : isEven(n - 2);
 };
 
 // 5. Sum all integers below a given integer.
